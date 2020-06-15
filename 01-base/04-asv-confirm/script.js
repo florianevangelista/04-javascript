@@ -9,9 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
+(function myFunc () {
 
     let age = prompt("How old are you ?");
     let sex = prompt("Are you male or female ?");
@@ -20,13 +18,9 @@
     let result = confirm("you are " + age + " years old, you are a " + sex + " and you come from " + city + "?");
 
     if (result) {
-        alert("Great !!!");
-    } else {
-        let age = prompt("How old are you ?");
-        let sex = prompt("Are you male or female ?");
-        let city = prompt("what city are you from ?");
-
         confirm("you are " + age + " years old, you are a " + sex + " and you come from " + city + "?");
+    } else {
+        myFunc();
     }
 
 })();

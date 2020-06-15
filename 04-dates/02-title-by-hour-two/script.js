@@ -17,7 +17,7 @@
 
     console.log(hours, minutes);
 
-    if(hours >= 17 && minutes >= 30) {
+    if(hours >= 17 && minutes >= 30 || hours<17) {
         document.getElementById("target").innerHTML = "Good evening";
     } else {
         document.getElementById("target").innerHTML = "Hello";
